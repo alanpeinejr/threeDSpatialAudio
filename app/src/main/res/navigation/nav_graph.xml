@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/home_fragment">
+
+    <fragment
+        android:id="@+id/home_fragment"
+        android:name="io.agora.threeDSpatialAudio.ui.HomeFragment"
+        android:label="@string/home_fragment_title"
+        tools:layout="@layout/fragment_home">
+
+        <action
+            android:id="@+id/HomeFragment_to_KitActionsFragment"
+            app:destination="@id/kitActionsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/kitActionsFragment"
+        android:name="io.agora.threeDSpatialAudio.ui.KitActionsFragment"
+        android:label="Local Spatial Kit"
+        tools:layout="@layout/fragment_kit_actions" >
+        <action
+            android:id="@+id/action_kitActionsFragment_to_hostFragment"
+            app:destination="@id/hostFragment" />
+        <action
+            android:id="@+id/action_kitActionsFragment_to_nineSeatsFragment"
+            app:destination="@id/nineSeatFragment" />
+        <action
+            android:id="@+id/action_kitActionsFragment_to_imageFragment"
+            app:destination="@id/imageFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/hostFragment"
+        android:name="io.agora.threeDSpatialAudio.ui.HostFragment"
+        android:label="Host - Local Kit"
+        tools:layout="@layout/fragment_host">
+        <argument
+            android:name="channelName"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/nineSeatFragment"
+        android:name="io.agora.threeDSpatialAudio.ui.NineSeatFragment"
+        android:label="9 Seats - Local Kit"
+        tools:layout="@layout/fragment_host">
+        <argument
+            android:name="channelName"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/imageFragment"
+        android:name="io.agora.threeDSpatialAudio.ui.ImageFragment"
+        android:label="Image - Local Kit"
+        tools:layout="@layout/fragment_image" >
+        <argument
+            android:name="chanelName"
+            app:argType="string" />
+    </fragment>
+</navigation>

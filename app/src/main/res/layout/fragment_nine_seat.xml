@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp"
+    tools:context=".ui.NineSeatFragment">
+    <!--____________________________________ CHANNEL NAME ___________________________________-->
+
+    <TextView
+        android:id="@+id/nine_seat_channel_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--____________________________________ USER ID ___________________________________-->
+
+    <LinearLayout
+        android:id="@+id/nine_seat_user_bubble_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/layout_rounded_corner_bg"
+        android:backgroundTint="@color/gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/nine_seat_channel_name">
+
+        <TextView
+            android:id="@+id/nine_seat_user_id_bubble"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+    </LinearLayout>
+    <!--____________________________________SEATS___________________________________-->
+
+    <!--____________________________________ TOP ___________________________________-->
+    <FrameLayout
+        android:id="@+id/nine_seats_top_left_seat"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="4dp"
+        android:background="@drawable/layout_circle_bg"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="@id/middle_guide_left"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/nine_seat_user_bubble_container" />
+
+    <TextView
+        android:id="@+id/nine_seats_top_left_label"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/seat_empty"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:layout_constraintBottom_toTopOf="@id/nine_seats_middle_left_seat"
+        app:layout_constraintEnd_toEndOf="@id/middle_guide_left"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/nine_seats_top_left_seat" />
+
+    <FrameLayout
+        android:id="@+id/nine_seats_top_middle_seat"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="4dp"
+        android:background="@drawable/layout_circle_bg"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="@id/middle_guide_right"
+        app:layout_constraintStart_toStartOf="@id/middle_guide_left"
+        app:layout_constraintTop_toBottomOf="@id/nine_seat_user_bubble_container" />
+
+    <TextView
+        android:id="@+id/nine_seats_top_middle_label"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/seat_empty"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:layout_constraintBottom_toTopOf="@id/nine_seats_middle_middle_seat"
+        app:layout_constraintEnd_toEndOf="@id/middle_guide_right"
+        app:layout_constraintStart_toStartOf="@id/middle_guide_left"
+        app:layout_constraintTop_toBottomOf="@id/nine_seats_top_middle_seat" />
+
+    <FrameLayout
+        android:id="@+id/nine_seats_top_right_seat"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="4dp"
+        android:background="@drawable/layout_circle_bg"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/middle_guide_right"
+        app:layout_constraintTop_toBottomOf="@id/nine_seat_user_bubble_container" />
+
+    <TextView
+        android:id="@+id/nine_seats_top_right_label"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/seat_empty"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:layout_constraintBottom_toTopOf="@id/nine_seats_middle_right_seat"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/middle_guide_right"
+        app:layout_constraintTop_toBottomOf="@id/nine_seats_top_right_seat" />
+
+    <!--____________________________________ MIDDLE ___________________________________-->
+    <FrameLayout
+        android:id="@+id/nine_seats_middle_left_seat"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="4dp"
+        android:background="@drawable/layout_circle_bg"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="@id/middle_guide_left"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/nine_seats_top_left_label" />
+
+    <TextView
+        android:id="@+id/nine_seats_middle_left_label"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/seat_empty"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:layout_constraintBottom_toTopOf="@id/nine_seats_bottom_left_seat"
+        app:layout_constraintEnd_toEndOf="@id/middle_guide_left"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/nine_seats_middle_left_seat" />
+
+    <FrameLayout
+        android:id="@+id/nine_seats_middle_middle_seat"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="4dp"
+        android:background="@drawable/layout_circle_bg"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="@id/middle_guide_right"
+        app:layout_constraintStart_toStartOf="@id/middle_guide_left"
+        app:layout_constraintTop_toBottomOf="@id/nine_seats_top_middle_label" />
+
+    <TextView
+        android:id="@+id/nine_seats_middle_middle_label"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/seat_empty"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:layout_constraintBottom_toTopOf="@id/nine_seats_bottom_middle_seat"
+        app:layout_constraintEnd_toEndOf="@id/middle_guide_right"
+        app:layout_constraintStart_toStartOf="@id/middle_guide_left"
+        app:layout_constraintTop_toBottomOf="@id/nine_seats_middle_middle_seat" />
+
+    <FrameLayout
+        android:id="@+id/nine_seats_middle_right_seat"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="4dp"
+        android:background="@drawable/layout_circle_bg"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/middle_guide_right"
+        app:layout_constraintTop_toBottomOf="@id/nine_seats_top_right_label" />
+
+    <TextView
+        android:id="@+id/nine_seats_middle_right_label"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/seat_empty"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:layout_constraintBottom_toTopOf="@id/nine_seats_bottom_right_seat"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/middle_guide_right"
+        app:layout_constraintTop_toBottomOf="@id/nine_seats_middle_right_seat" />
+
+    <!--____________________________________ BOTTOM ___________________________________-->
+
+    <FrameLayout
+        android:id="@+id/nine_seats_bottom_left_seat"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="4dp"
+        android:background="@drawable/layout_circle_bg"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="@id/middle_guide_left"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/nine_seats_middle_left_label" />
+
+    <TextView
+        android:id="@+id/nine_seats_bottom_left_label"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/seat_empty"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:layout_constraintEnd_toEndOf="@id/middle_guide_left"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/nine_seats_bottom_left_seat" />
+
+    <FrameLayout
+        android:id="@+id/nine_seats_bottom_middle_seat"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="4dp"
+        android:background="@drawable/layout_circle_bg"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="@id/middle_guide_right"
+        app:layout_constraintStart_toStartOf="@id/middle_guide_left"
+        app:layout_constraintTop_toBottomOf="@id/nine_seats_middle_middle_label" />
+
+    <TextView
+        android:id="@+id/nine_seats_bottom_middle_label"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/seat_empty"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:layout_constraintEnd_toEndOf="@id/middle_guide_right"
+        app:layout_constraintStart_toStartOf="@id/middle_guide_left"
+        app:layout_constraintTop_toBottomOf="@id/nine_seats_bottom_middle_seat" />
+
+    <FrameLayout
+        android:id="@+id/nine_seats_bottom_right_seat"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="4dp"
+        android:background="@drawable/layout_circle_bg"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/middle_guide_right"
+        app:layout_constraintTop_toBottomOf="@id/nine_seats_middle_right_label" />
+
+    <TextView
+        android:id="@+id/nine_seats_bottom_right_label"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/seat_empty"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/middle_guide_right"
+        app:layout_constraintTop_toBottomOf="@id/nine_seats_bottom_right_seat" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/middle_guide_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.3333" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/middle_guide_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.6667" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

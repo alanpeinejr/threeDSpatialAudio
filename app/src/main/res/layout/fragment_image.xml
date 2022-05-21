@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp"
+    tools:context=".ui.ImageFragment">
+
+    <TextView
+        android:id="@+id/image_channel_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/image_container"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="8dp"
+        android:background="@drawable/room_pic"
+        android:padding="8dp"
+        app:layout_constraintBottom_toTopOf="@id/head_motion_bubble"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/image_channel_name">
+
+        <TextView
+            android:id="@+id/image_audience"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:background="@drawable/layout_circle_bg"
+            android:backgroundTint="@color/teal"
+            android:gravity="center"
+            android:text="@string/image_audience"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="@id/image_guideline_audience_x"
+            app:layout_constraintEnd_toEndOf="@id/image_guideline_audience_and_2_y"
+            app:layout_constraintStart_toStartOf="@id/image_guideline_audience_and_2_y"
+            app:layout_constraintTop_toTopOf="@id/image_guideline_audience_x" />
+
+        <TextView
+            android:id="@+id/image_0"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:background="@drawable/layout_circle_bg"
+            android:backgroundTint="@color/orange"
+            android:gravity="center"
+            android:text="@string/image_0"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="@id/image_guideline_0_x"
+            app:layout_constraintEnd_toEndOf="@id/image_guideline_0_y"
+            app:layout_constraintStart_toStartOf="@id/image_guideline_0_y"
+            app:layout_constraintTop_toTopOf="@id/image_guideline_0_x" />
+        <TextView
+            android:id="@+id/image_1"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:background="@drawable/layout_circle_bg"
+            android:backgroundTint="@color/orange"
+            android:gravity="center"
+            android:text="@string/image_1"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="@id/image_guideline_1_x"
+            app:layout_constraintEnd_toEndOf="@id/image_guideline_1_y"
+            app:layout_constraintStart_toStartOf="@id/image_guideline_1_y"
+            app:layout_constraintTop_toTopOf="@id/image_guideline_1_x" />
+        <TextView
+            android:id="@+id/image_2"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:background="@drawable/layout_circle_bg"
+            android:backgroundTint="@color/orange"
+            android:gravity="center"
+            android:text="@string/image_2"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="@id/image_guideline_2_x"
+            app:layout_constraintEnd_toEndOf="@id/image_guideline_audience_and_2_y"
+            app:layout_constraintStart_toStartOf="@id/image_guideline_audience_and_2_y"
+            app:layout_constraintTop_toTopOf="@id/image_guideline_2_x" />
+        <TextView
+            android:id="@+id/image_3"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:background="@drawable/layout_circle_bg"
+            android:backgroundTint="@color/orange"
+            android:gravity="center"
+            android:text="@string/image_3"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="@id/image_guideline_3_x"
+            app:layout_constraintEnd_toEndOf="@id/image_guideline_3_y"
+            app:layout_constraintStart_toStartOf="@id/image_guideline_3_y"
+            app:layout_constraintTop_toTopOf="@id/image_guideline_3_x" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/image_guideline_0_x"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.57" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/image_guideline_audience_and_2_y"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.52" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/image_guideline_1_y"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.34" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/image_guideline_0_y"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.18" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/image_guideline_2_x"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.34858388" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/image_guideline_3_x"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.41" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/image_guideline_3_y"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.8" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/image_guideline_audience_x"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.5969499" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/image_guideline_1_x"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.73" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/head_motion_bubble"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/layout_rounded_corner_bg"
+        android:backgroundTint="@color/gray"
+        android:padding="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/image_head_motion_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/head_motion_title"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:layout_constraintLeft_toRightOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/image_head_motion_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/image_head_motion_debug_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/head_motion_debug"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/image_head_motion_title" />
+
+        <TextView
+            android:id="@+id/image_head_motion_debug_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="WNI? TODO dont have airpod head tracking in Android but has the gyro? There was a push for phone VR stuff few years back, is that still a thing?"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/image_head_motion_debug_label" />
+
+        <TextView
+            android:id="@+id/image_head_motion_spinner_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/head_motion_manual_description"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:layout_constraintLeft_toRightOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/image_head_motion_debug_details" />
+
+        <Spinner
+            android:id="@+id/image_head_motion_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            app:layout_constraintLeft_toRightOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/image_head_motion_spinner_title" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

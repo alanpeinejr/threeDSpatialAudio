@@ -1,0 +1,63 @@
+<resources>
+    <string name="app_name">3DSpatialAudioDemo</string>
+    <string name="action_settings">Settings</string>
+
+    <!--    AGORA RTC CONFIG-->
+    <!--    TODO DONT COMMIT THIS LINE-->
+    <string name="agora_app_id">087eef30492c4b29a561e4698da1bb2a</string>
+
+
+    <!-- Strings used for fragments for navigation -->
+<!--    Home Fragment-->
+    <string name="home_fragment_title">Choose a Kit</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="local_kit">Local Kit</string>
+    <string name="cloud_kit">Cloud Kit (TODO)</string>
+<!--    Kit Fragments-->
+    <string name="no_channel_name_warning">Please enter a Channel Name</string>
+    <string name="host">Host</string>
+    <string name="audience">Audience</string>
+    <string name="join_host_title">Join as Host</string>
+    <string name="join_host_description">Join room as a host</string>
+
+    <string name="join_9_seat_title">9 Seats</string>
+    <string name="join_image_title">Image</string>
+
+<!--    9 Seat Fragment-->
+    <string name="seat_empty">-</string>
+    <string name="seat_select_alert_title">Select User</string>
+    <string name="seat_select_empty">No Hosts have joined yet!</string>
+    <string name="seat_remove_from_seat">Evict</string>
+    <string name="seat_cancel_click">Cancel</string>
+
+    <!--    Image Fragment-->
+    <string name="head_motion_title">Head Control</string>
+    <string name="head_motion_debug">Motion Debug:</string>
+    <string name="head_motion_manual_description">Move Head:</string>
+    <string name="image_audience">V</string>
+    <string name="image_0">0</string>
+    <string name="image_1">1</string>
+    <string name="image_2">2</string>
+    <string name="image_3">3</string>
+
+
+    <!--    Host Fragment-->
+    <string name="user_id">User ID: </string>
+    <string name="audio_mixing">Audio Mixing</string>
+    <string name="audio_switch_label">Turn Audio On</string>
+    <string name="audio_spinner_label">Select Sound</string>
+    <string name="video">Video</string>
+    <string name="video_switch_label">Turn Video On</string>
+
+
+
+
+
+
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="channel_name">Channel Name</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

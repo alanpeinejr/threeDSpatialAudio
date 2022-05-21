@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="host_audio_mix_array">
+        <item>Music</item>
+        <item>Sound 1</item>
+        <item>Sound 2</item>
+        <item>Sound 3</item>
+    </string-array>
+</resources>
